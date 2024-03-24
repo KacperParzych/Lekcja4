@@ -64,5 +64,16 @@ print(z)
 print("\n\n")
 x, y = np.mgrid[0:5, 0:5]
 print(x, "\n")
-print(y)
+print(y, "\n")
 
+
+print(z[0, 0, 1])
+print(z.ndim)
+
+print("\n\n")
+mat_diag_k = np.diag([a for a in range(5)])
+print(mat_diag_k)
+
+print("\n\n")
+z = np.fromiter(range(5), dtype = 'int32')
+print(z)
