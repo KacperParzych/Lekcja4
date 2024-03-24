@@ -121,3 +121,19 @@ print(a[s], "\n")
 print(a[2:7:2], "\n")
 print(a[1:], "\n")
 print(a[2:5], "\n")
+
+mat = np.arange(25)
+
+mat = mat.reshape((5, 5))
+print(mat[1:], "\n")
+print(mat[:1], "\n")
+print(mat[:, -1:], "\n")
+print(mat[2:6, 1:k3], "\n")
+print(mat[:, range(2,6,2)], "\n")
+
+x = np.array([[0,1,2],[3,4,5],[6,7,8],[9,10,11]])
+print(x, "\n")
+rows = np.array([[0,0], [3,3]])
+cols = np.array([[0,2],[0,2]])
+y=x[rows, cols]
+print(y)
